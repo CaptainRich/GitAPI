@@ -1,6 +1,8 @@
 """ A script to query GitHUB python repositories. """
 
 import requests            # To make API calls to a website
+from pathlib import Path   # For file I/O
+
 
 # Setup the URL (target) for the request
 url = "https://api.github.com/search/repositories"
@@ -43,10 +45,40 @@ print( f"Description: {repo_dict['description']}" )
 
 .... end of depreciated code. """
 
-print( "\nSelected information about each returned repository:" )
+# Terminal and File output of returned repository information.
+unicode_message = "Can't print Unicode string as text."
+
+cwd  = Path.cwd()
+path = cwd / 'repos.out' 
+fhandle = open( path, "w" )    # Open the file, overwritting if it exists.
+
+header = "\nSelected information about each returned repository:\n"
+fhandle.write( header )
+print( header )
+
 for repo_dict in repo_dicts:
-    print( f"\nName: {repo_dict['name']}" )
-    print( f"Owner: {repo_dict['owner']['login']}" )
-    print( f"Stars: {repo_dict['stargazers_count']}" )
-    print( f"Repository: {repo_dict['html_url']}" )
-    print( f"Description: {repo_dict['description']}" )
+    string = f"\nName: {repo_dict['name']}"
+    print( string )
+    fhandle.write( string + "\n")
+
+
+    string = f"Owner: {repo_dict['owner']['login']}"
+    print( string )
+    fhandle.write( string + "\n" )
+
+    string = f"Stars: {repo_dict['stargazers_count']}"
+    print( string )
+    fhandle.write( string + "\n" )
+
+    string = f"Repository: {repo_dict['html_url']}"
+    print( string )
+    fhandle.write( string  + "\n")
+    
+    string = f"Description: {repo_dict['description']}"
+    print( string )
+    try:
+        fhandle.write( string + "\n" )
+    except:
+        fhandle.write( unicode_message + "\n" )
+
+fhandle.close()
