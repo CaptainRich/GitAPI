@@ -1,23 +1,29 @@
 """ A script to query GitHUB python repositories. """
 
-import requests            # To make API calls to a website
-from pathlib import Path   # For file I/O
+import requests                # To make API calls to a website
+from pathlib import Path       # For file I/O
+import plotly.express as px    # For visualizing the repo data
 
 
 # Setup the URL (target) for the request
+#language = 'Javascript'
+language  = 'Python'
+
 url = "https://api.github.com/search/repositories"
-url += "?q=language:python+sort:stars+stars:>10000"
+url += "?q=language:"
+url += language
+url += "+sort:stars+stars:>10000"
 
 headers = { "Accept": "application/vnd.github.v3+json" }
 r = requests.get( url, headers=headers )
-print( f"Status code: {r.status_code}" )
+print( f"\n\nStatus code: {r.status_code}" )
 
 # Convert the response object to a Python dictionary.
 response_dict = r.json()
 
 # Process the results (response).
 print( response_dict.keys() )
-print( f"Total repositories: {response_dict['total_count']}" )
+print( f"Total {language} repositories: {response_dict['total_count']}" )
 print( f"Complete results: {not response_dict['incomplete_results']}" )
 
 # Report information about the repos.
@@ -50,35 +56,65 @@ unicode_message = "Can't print Unicode string as text."
 
 cwd  = Path.cwd()
 path = cwd / 'repos.out' 
-fhandle = open( path, "w" )    # Open the file, overwritting if it exists.
+fhandle = open( path, "w" )    # Open the file, overwriting if it exists.
 
-header = "\nSelected information about each returned repository:\n"
+header = "\nSelected information about each returned "
+header += language + " repository:\n"
 fhandle.write( header )
-print( header )
+#print( header )
 
 for repo_dict in repo_dicts:
     string = f"\nName: {repo_dict['name']}"
-    print( string )
+    #print( string )
     fhandle.write( string + "\n")
 
 
     string = f"Owner: {repo_dict['owner']['login']}"
-    print( string )
+    #print( string )
     fhandle.write( string + "\n" )
 
     string = f"Stars: {repo_dict['stargazers_count']}"
-    print( string )
+    #print( string )
     fhandle.write( string + "\n" )
 
     string = f"Repository: {repo_dict['html_url']}"
-    print( string )
+    #print( string )
     fhandle.write( string  + "\n")
     
     string = f"Description: {repo_dict['description']}"
-    print( string )
+    #print( string )
     try:
         fhandle.write( string + "\n" )
     except:
         fhandle.write( unicode_message + "\n" )
 
 fhandle.close()
+
+# Setup for visualization of the repo data.
+repo_links, stars, hover_texts = [], [], []
+
+for repo_dict in repo_dicts:
+    # Turn the repo name into an HTML link
+    repo_name = repo_dict['name']
+    repo_url  = repo_dict['html_url']
+    repo_link = f"<a href='{repo_url}'>{repo_name}</a>"
+    #repo_link = repo_name
+    repo_links.append( repo_link )
+    stars.append( repo_dict['stargazers_count'] )
+
+    # Construct the 'hover text' for each project (bar on barchart).
+    owner       = repo_dict['owner']['login']
+    description = repo_dict['description']
+    hover_text  = f"{owner}<br />{description}"
+    hover_texts.append( hover_text) 
+
+# Make the visualization.
+title  = "    Most starred " + language + " Projects on GitHub"
+labels = {'x': 'Repository', 'y': 'Stars' }
+fig    = px.bar( x=repo_links, y=stars, title=title, labels=labels,
+                 hover_name=hover_texts )
+fig.update_layout( title_font_size=28, xaxis_title_font_size=20,
+                   yaxis_title_font_size=20 )
+fig.update_traces( marker_color='SteelBlue', marker_opacity=0.8 )
+fig.show()
+
