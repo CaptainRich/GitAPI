@@ -7,7 +7,7 @@ import plotly.express as px    # For visualizing the repo data
 
 # Setup the URL (target) for the request
 #language = 'Javascript'
-language  = 'Python'
+language  = 'Javascript'
 
 url = "https://api.github.com/search/repositories"
 url += "?q=language:"

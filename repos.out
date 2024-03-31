@@ -1,182 +1,182 @@
 
-Selected information about each returned Python repository:
+Selected information about each returned Javascript repository:
 
-Name: public-apis
-Owner: public-apis
-Stars: 288164
-Repository: https://github.com/public-apis/public-apis
-Description: A collective list of free APIs
+Name: react
+Owner: facebook
+Stars: 220807
+Repository: https://github.com/facebook/react
+Description: The library for web and native user interfaces.
 
-Name: system-design-primer
-Owner: donnemartin
-Stars: 249925
-Repository: https://github.com/donnemartin/system-design-primer
-Description: Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.
-
-Name: awesome-python
-Owner: vinta
-Stars: 202496
-Repository: https://github.com/vinta/awesome-python
-Description: An opinionated list of awesome Python frameworks, libraries, software and resources.
-
-Name: Python
-Owner: TheAlgorithms
-Stars: 177149
-Repository: https://github.com/TheAlgorithms/Python
-Description: All Algorithms implemented in Python
-
-Name: Python-100-Days
-Owner: jackfrued
-Stars: 148981
-Repository: https://github.com/jackfrued/Python-100-Days
+Name: javascript-algorithms
+Owner: trekhleb
+Stars: 181267
+Repository: https://github.com/trekhleb/javascript-algorithms
 Can't print Unicode string as text.
 
-Name: youtube-dl
-Owner: ytdl-org
-Stars: 127980
-Repository: https://github.com/ytdl-org/youtube-dl
-Description: Command-line program to download videos from YouTube.com and other video sites
+Name: bootstrap
+Owner: twbs
+Stars: 167220
+Repository: https://github.com/twbs/bootstrap
+Description: The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 
-Name: stable-diffusion-webui
-Owner: AUTOMATIC1111
-Stars: 127193
-Repository: https://github.com/AUTOMATIC1111/stable-diffusion-webui
-Description: Stable Diffusion web UI
+Name: AutoGPT
+Owner: Significant-Gravitas
+Stars: 160249
+Repository: https://github.com/Significant-Gravitas/AutoGPT
+Description: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
 
-Name: transformers
-Owner: huggingface
-Stars: 123378
-Repository: https://github.com/huggingface/transformers
+Name: javascript
+Owner: airbnb
+Stars: 140998
+Repository: https://github.com/airbnb/javascript
+Description: JavaScript Style Guide
+
+Name: next.js
+Owner: vercel
+Stars: 119745
+Repository: https://github.com/vercel/next.js
+Description: The React Framework
+
+Name: 30-seconds-of-code
+Owner: Chalarangelo
+Stars: 118728
+Repository: https://github.com/Chalarangelo/30-seconds-of-code
+Description: Short code snippets for all your development needs
+
+Name: axios
+Owner: axios
+Stars: 103791
+Repository: https://github.com/axios/axios
+Description: Promise based HTTP client for the browser and node.js
+
+Name: node
+Owner: nodejs
+Stars: 103122
+Repository: https://github.com/nodejs/node
 Can't print Unicode string as text.
 
-Name: HelloGitHub
-Owner: 521xueweihan
-Stars: 83931
-Repository: https://github.com/521xueweihan/HelloGitHub
+Name: create-react-app
+Owner: facebook
+Stars: 101766
+Repository: https://github.com/facebook/create-react-app
+Description: Set up a modern web app by running one command.
+
+Name: three.js
+Owner: mrdoob
+Stars: 98390
+Repository: https://github.com/mrdoob/three.js
+Description: JavaScript 3D Library.
+
+Name: clean-code-javascript
+Owner: ryanmcdermott
+Stars: 88964
+Repository: https://github.com/ryanmcdermott/clean-code-javascript
+Description: :bathtub: Clean Code concepts adapted for JavaScript
+
+Name: Web-Dev-For-Beginners
+Owner: microsoft
+Stars: 81112
+Repository: https://github.com/microsoft/Web-Dev-For-Beginners
+Description: 24 Lessons, 12 Weeks, Get Started as a Web Developer
+
+Name: iptv
+Owner: iptv-org
+Stars: 77323
+Repository: https://github.com/iptv-org/iptv
+Description: Collection of publicly available IPTV channels from all over the world
+
+Name: svelte
+Owner: sveltejs
+Stars: 76040
+Repository: https://github.com/sveltejs/svelte
+Description: Cybernetically enhanced web apps
+
+Name: Font-Awesome
+Owner: FortAwesome
+Stars: 72938
+Repository: https://github.com/FortAwesome/Font-Awesome
+Description: The iconic SVG, font, and CSS toolkit
+
+Name: json-server
+Owner: typicode
+Stars: 70957
+Repository: https://github.com/typicode/json-server
+Description: Get a full fake REST API with zero coding in less than 30 seconds (seriously)
+
+Name: awesome-mac
+Owner: jaywcjlove
+Stars: 70643
+Repository: https://github.com/jaywcjlove/awesome-mac
 Can't print Unicode string as text.
 
-Name: thefuck
-Owner: nvbn
-Stars: 82508
-Repository: https://github.com/nvbn/thefuck
-Description: Magnificent app which corrects your previous console command.
+Name: reveal.js
+Owner: hakimel
+Stars: 66752
+Repository: https://github.com/hakimel/reveal.js
+Description: The HTML Presentation Framework
 
-Name: langchain
-Owner: langchain-ai
-Stars: 80777
-Repository: https://github.com/langchain-ai/langchain
+Name: mermaid
+Owner: mermaid-js
+Stars: 66342
+Repository: https://github.com/mermaid-js/mermaid
+Description: Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown
+
+Name: github-readme-stats
+Owner: anuraghazra
+Stars: 64163
+Repository: https://github.com/anuraghazra/github-readme-stats
+Description: :zap: Dynamically generated stats for your github readmes
+
+Name: webpack
+Owner: webpack
+Stars: 64091
+Repository: https://github.com/webpack/webpack
+Description: A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through "loaders", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.
+
+Name: express
+Owner: expressjs
+Stars: 63575
+Repository: https://github.com/expressjs/express
+Description: Fast, unopinionated, minimalist web framework for node.
+
+Name: Chart.js
+Owner: chartjs
+Stars: 63256
+Repository: https://github.com/chartjs/Chart.js
+Description: Simple HTML5 Charts using the <canvas> tag
+
+Name: 33-js-concepts
+Owner: leonardomso
+Stars: 61652
+Repository: https://github.com/leonardomso/33-js-concepts
 Can't print Unicode string as text.
 
-Name: pytorch
-Owner: pytorch
-Stars: 77081
-Repository: https://github.com/pytorch/pytorch
-Description: Tensors and Dynamic neural networks in Python with strong GPU acceleration
+Name: resume.github.com
+Owner: resume
+Stars: 61288
+Repository: https://github.com/resume/resume.github.com
+Description: Resumes generated using the GitHub informations
 
-Name: models
-Owner: tensorflow
-Stars: 76530
-Repository: https://github.com/tensorflow/models
-Description: Models and examples built with TensorFlow
+Name: atom
+Owner: atom
+Stars: 59947
+Repository: https://github.com/atom/atom
+Description: :atom: The hackable text editor
 
-Name: django
-Owner: django
-Stars: 76375
-Repository: https://github.com/django/django
-Description: The Web framework for perfectionists with deadlines.
+Name: markdown-here
+Owner: adam-p
+Stars: 59450
+Repository: https://github.com/adam-p/markdown-here
+Description: Google Chrome, Firefox, and Thunderbird extension that lets you write email in Markdown and render it before sending.
 
-Name: fastapi
-Owner: tiangolo
-Stars: 69946
-Repository: https://github.com/tiangolo/fastapi
-Description: FastAPI framework, high performance, easy to learn, fast to code, ready for production
+Name: angular.js
+Owner: angular
+Stars: 58941
+Repository: https://github.com/angular/angular.js
+Description: AngularJS - HTML enhanced for web apps!
 
-Name: yt-dlp
-Owner: yt-dlp
-Stars: 68964
-Repository: https://github.com/yt-dlp/yt-dlp
-Description: A feature-rich command-line audio/video downloader
-
-Name: core
-Owner: home-assistant
-Stars: 68164
-Repository: https://github.com/home-assistant/core
-Description: :house_with_garden: Open source home automation that puts local control and privacy first.
-
-Name: flask
-Owner: pallets
-Stars: 66132
-Repository: https://github.com/pallets/flask
-Description: The Python micro framework for building web applications.
-
-Name: awesome-machine-learning
-Owner: josephmisiti
-Stars: 63205
-Repository: https://github.com/josephmisiti/awesome-machine-learning
-Description: A curated list of awesome Machine Learning frameworks, libraries and software.
-
-Name: funNLP
-Owner: fighting41love
-Stars: 63073
-Repository: https://github.com/fighting41love/funNLP
-Can't print Unicode string as text.
-
-Name: devops-exercises
-Owner: bregman-arie
-Stars: 62905
-Repository: https://github.com/bregman-arie/devops-exercises
-Description: Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions
-
-Name: ansible
-Owner: ansible
-Stars: 60783
-Repository: https://github.com/ansible/ansible
-Description: Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
-
-Name: keras
-Owner: keras-team
-Stars: 60781
-Repository: https://github.com/keras-team/keras
-Description: Deep Learning for humans
-
-Name: cpython
-Owner: python
-Stars: 59143
-Repository: https://github.com/python/cpython
-Description: The Python programming language
-
-Name: whisper
-Owner: openai
-Stars: 58887
-Repository: https://github.com/openai/whisper
-Description: Robust Speech Recognition via Large-Scale Weak Supervision
-
-Name: scikit-learn
-Owner: scikit-learn
-Stars: 57829
-Repository: https://github.com/scikit-learn/scikit-learn
-Description: scikit-learn: machine learning in Python
-
-Name: manim
-Owner: 3b1b
-Stars: 57212
-Repository: https://github.com/3b1b/manim
-Description: Animation engine for explanatory math videos
-
-Name: PayloadsAllTheThings
-Owner: swisskyrepo
-Stars: 56281
-Repository: https://github.com/swisskyrepo/PayloadsAllTheThings
-Description: A list of useful payloads and bypass for Web Application Security and Pentest/CTF
-
-Name: d2l-zh
-Owner: d2l-ai
-Stars: 55925
-Repository: https://github.com/d2l-ai/d2l-zh
-Can't print Unicode string as text.
-
-Name: gpt4free
-Owner: xtekky
-Stars: 55473
-Repository: https://github.com/xtekky/gpt4free
-Description: The official gpt4free repository | various collection of powerful language models
+Name: jquery
+Owner: jquery
+Stars: 58817
+Repository: https://github.com/jquery/jquery
+Description: jQuery JavaScript Library
