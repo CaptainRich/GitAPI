@@ -73,7 +73,7 @@ The following modules are necessary imports (imported in the .py files):
 The images below show the resulting visualizations and status reports generated 
 by the script:  
 
-The 'Python' repository:    
+The 'Python' repository:  
 ![Python Repository](https://github.com/CaptainRich/GitAPI/blob/main/images/python_repos.png)  
 
 The 'Javascript' repository':  
@@ -82,8 +82,7 @@ The 'Javascript' repository':
 The 'terminal status' report:  
 ![Terminal Status Report](https://github.com/CaptainRich/GitAPI/blob/main/images/terminal_status.png)  
 
-The 'die roll' plot:  
-![Die Roll Plot](https://github.com/CaptainRich/Visualizations/blob/main/images/die_roll_results.png)  
+
 
 
 
