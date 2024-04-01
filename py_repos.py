@@ -7,7 +7,9 @@ import plotly.express as px    # For visualizing the repo data
 
 # Setup the URL (target) for the request
 #language = 'Javascript'
-language  = 'Javascript'
+language  = 'Python'
+#language  = 'Fortran'
+#language   = 'HTML'
 
 url = "https://api.github.com/search/repositories"
 url += "?q=language:"
@@ -22,13 +24,18 @@ print( f"\n\nStatus code: {r.status_code}" )
 response_dict = r.json()
 
 # Process the results (response).
-print( response_dict.keys() )
-print( f"Total {language} repositories: {response_dict['total_count']}" )
+#print( response_dict.keys() )
+repo_count = response_dict['total_count']
+print( f"Total {language} repositories: {repo_count}" )
 print( f"Complete results: {not response_dict['incomplete_results']}" )
 
 # Report information about the repos.
 repo_dicts = response_dict['items']
 print( f"Repositories returned: {len(repo_dicts)}" )
+
+if repo_count < 1:
+    print( f"No repositories found for {language}, exiting!" )
+    exit()
 
 
 """ Depreciated code ...

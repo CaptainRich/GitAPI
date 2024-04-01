@@ -1,6 +1,6 @@
 # $`\textcolor{blue}{\text{GitAPI}}`$
-A script to query the GitHub API for starred Python projects.
-Richard Ay (April 2024, *updated April 2024*)
+A script to query the GitHub API for starred Python (or other 'language' projects.
+Richard Ay (March 2024, *updated March 2024*)
 
 ## $`\textcolor{blue}{\text{Table of Contents}}`$
 * [Setup](#setup)
@@ -42,6 +42,11 @@ Subsequently the installations can be verified with the command:
 From VSCode, by issuing the command (note the suffix ".py' is required)  
 - 'python py_repos.py'  
 
+The script reports status to the terminal.  If the search for the selected language
+is successful, the summary data of the top 30 repositories is written to the file 'repos.out'.
+A bar-chart is created showing the relative 'likes' of these 30 repositories, where the name of
+the repository (used as the 'x' axis label) is a link to the associated repository.
+
 
 ## References
 1. Python Crash Course, Eric Matthes, No Starch Press, 2023. Chapters 12-15.  
@@ -49,7 +54,7 @@ From VSCode, by issuing the command (note the suffix ".py' is required)
 
 ## File List
 **py_repose.py** - a script to list and plot the top <language> repositories found on GitHub.
-<language> can be 'Python' or 'Javascript'. 
+<language> can be 'Python' or 'Javascript'.   
 **repos.out** - a text file (created by py_repos.py) that lists the repositories found. 
 
 
@@ -69,10 +74,10 @@ The images below show the resulting visualizations and status reports generated
 by the script:  
 
 The 'Python' repository:    
-![Python Repository](https://github.com/CaptainRich/GitAPI/blob/main/images/python_repo.png)  
+![Python Repository](https://github.com/CaptainRich/GitAPI/blob/main/images/python_repos.png)  
 
 The 'Javascript' repository':  
-![Javascript Repository](https://github.com/CaptainRich/GitAPI/blob/main/images/javascript_repo.png)  
+![Javascript Repository](https://github.com/CaptainRich/GitAPI/blob/main/images/javascript_repos.png)  
 
 The 'terminal status' report:  
 ![Terminal Status Report](https://github.com/CaptainRich/GitAPI/blob/main/images/terminal_status.png)  
