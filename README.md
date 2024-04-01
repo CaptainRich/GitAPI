@@ -41,11 +41,14 @@ Subsequently the installations can be verified with the command:
 ## Usage
 From VSCode, by issuing the command (note the suffix ".py' is required)  
 - 'python py_repos.py'  
+- 'python hn_articles.py'
 
-The script reports status to the terminal.  If the search for the selected language
+The py_repos script reports status to the terminal.  If the search for the selected language
 is successful, the summary data of the top 30 repositories is written to the file 'repos.out'.
 A bar-chart is created showing the relative 'likes' of these 30 repositories, where the name of
-the repository (used as the 'x' axis label) is a link to the associated repository.
+the repository (used as the 'x' axis label) is a link to the associated repository.  
+
+The hn_articles script queries the hacker-news web site for the top 30 articles.
 
 
 ## References
@@ -53,8 +56,9 @@ the repository (used as the 'x' axis label) is a link to the associated reposito
 
 
 ## File List
-**py_repose.py** - a script to list and plot the top <language> repositories found on GitHub.
-<language> can be 'Python' or 'Javascript'.   
+**ht_articles.py** - a script to acquire article information from the hacker-news website.
+**py_repose.py** - a script to list and plot the top [language] repositories found on GitHub.
+[language] can be 'Python' or 'Javascript'.   
 **repos.out** - a text file (created by py_repos.py) that lists the repositories found. 
 
 
